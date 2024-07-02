@@ -1,0 +1,169 @@
+.app-header {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  z-index: var(--zIndex);
+  transition: all 0.3s ease-in-out;
+}
+.app-header .top-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app-header .lists-tab {
+  margin: 0 -5px;
+}
+.app-header .lists-tab.slider {
+  display: none;
+  z-index: var(--zIndex);
+}
+@media (max-width: 700px) {
+.app-header .lists-tab.slider {
+    display: block;
+}
+}
+.app-header .lists-tab .swiper-slide {
+  padding: 8px 0;
+  width: auto;
+}
+@media (max-width: 768px) {
+.app-header {
+    margin: 0 auto 0;
+}
+}
+.app-header .buttons-box {
+  display: flex;
+}
+.app-header .settings-btn {
+  background-color: whitesmoke;
+  padding: 4px;
+  border: none;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-header .settings-btn svg {
+  width: 70%;
+}
+.app-header .about-btn {
+  background-color: whitesmoke;
+  padding: 7px 12px 8px;
+  border: none;
+  border-radius: 20px;
+  min-width: 120px;
+  height: 40px;
+}
+.logo-box {
+  width: 128px;
+  margin-top: 4px;
+}
+.logo-box img {
+  width: 100%;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #efefef;
+  padding: 40px 15px;
+  z-index: calc(var(--zIndex) + 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.modal.channels-modal {
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px 15px 0;
+}
+@media (max-width: 768px) {
+.modal {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+}
+.modal p {
+  max-width: 450px;
+  white-space: pre-wrap;
+  text-align: justify;
+  text-align-last: left;
+  line-height: 26px;
+}
+.modal p a {
+  color: #0057b7;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.default-layout {
+  height: 100%;
+}
+.container {
+  position: relative;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 450px) and (max-width: 700px) {
+.container {
+    max-width: 650px;
+    padding: 0 15px;
+}
+}
+.main-box {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100% - 126px);
+}
+.channels-modal .close-btn {
+  position: fixed !important;
+}
+.footer-desc {
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  padding: 5px 0;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  transform: rotate(45deg);
+}
+.close-btn:active {
+  transform: rotate(45deg) scale(0.9);
+}
+.cookiePanel {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+  background-color: #0057b7;
+  color: #fff;
+  padding: 10px;
+}
+.cookiePanel p {
+  padding-top: 8px;
+  width: 90%;
+  font-size: 14px;
+  text-align: justify;
+}
+.cookiePanel .close-btn {
+  color: #fff;
+  right: 10px;
+}
+
+/*# sourceMappingURL=73.c3e8b107.css.map*/
