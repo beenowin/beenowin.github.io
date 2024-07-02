@@ -756,7 +756,8 @@ var constants = __webpack_require__(3725);
 /* harmony export */   k: () => (/* binding */ DEFAULT_LANGUAGE)
 /* harmony export */ });
 const DEFAULT_LANGUAGE = 'uk';
-const VUE_APP_API_HOST = 'http://localhost:3000';
+// const VUE_APP_API_HOST = 'http://localhost:3000'
+const VUE_APP_API_HOST = 'http://144.202.103.96:3000';
 
 
 /***/ }),
@@ -1676,4 +1677,4 @@ module.exports = __webpack_require__.p + "img/min.678e212e.gif";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=app.39a441d1.js.map
+//# sourceMappingURL=app.8bbdbe74.js.map
