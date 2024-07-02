@@ -3,7 +3,6 @@ const bodyParser = require("body-parser");
 const cheerio = require("cheerio");
 const morgan = require("morgan");
 const cors = require("cors");
-
 const { TextIntersectionsUtil } = require("./utils");
 const {
   CHANNEL_FIELD_NAME_LIST,
