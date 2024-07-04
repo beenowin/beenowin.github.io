@@ -1,0 +1,222 @@
+.np-outer-switch {
+  width: 50px;
+  height: 24px;
+  border-radius: 30px;
+  background: #9b9b9b;
+  cursor: pointer;
+  position: relative;
+}
+.np-outer-switch-off {
+  background: #8d8d8d;
+  transition: background 0.4s;
+}
+.np-outer-switch-on {
+  background: #009300;
+  transition: background 0.4s;
+}
+.np-inner-switch {
+  height: 24px;
+  width: 24px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.np-inner-switch-left {
+  top: 0px;
+  left: 0px;
+  transition: left 0.4s;
+}
+.np-inner-switch-right {
+  top: 0px;
+  left: 26px;
+  transition: left 0.4s;
+}
+.channels-grid {
+  margin: 0 auto;
+}
+@media (max-width: 700px) {
+.channels-grid .category-title {
+    display: none;
+}
+.channels-grid .categories {
+    padding: 6px 0 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+}
+.channels-grid h5 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 20px 0 40px 6px;
+}
+.channels-grid .channels-grid-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.channels-grid .channel {
+  max-width: 120px;
+  width: 30%;
+  margin: 0 2% 10px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.channels-grid .channel .channel-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+  min-width: 30px;
+}
+.channels-grid .channel .channel-icon > img {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.channels-grid .channel .channel-icon .bg-placeholder {
+  padding-top: 100%;
+  width: 100%;
+  background-color: #0057b7;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.channels-grid .channel .channel-icon .bg-placeholder p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 46px;
+  font-weight: 600;
+}
+.channels-grid .channel .channel-icon .active {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 100%;
+  width: 28px;
+  bottom: 5px;
+  overflow: hidden;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  z-index: 2;
+}
+.channels-grid .channel .channel-icon .active img {
+  width: 30px;
+}
+.channels-grid .channel p {
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+}
+.channels-grid .channel .left-box {
+  width: 100%;
+}
+.channels-grid .channel .right-box {
+  display: none;
+}
+.channels-grid .channel .channel-name {
+  text-align: center;
+}
+@media (max-width: 700px) {
+.channels-grid .channel {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
+    padding: 10px 10px;
+    border-bottom: 0.4px solid rgba(199, 199, 199, 0.9);
+    margin: 0;
+}
+.channels-grid .channel:last-child {
+    border-bottom: none;
+}
+.channels-grid .channel .left-box {
+    display: flex;
+    align-items: center;
+}
+.channels-grid .channel .right-box {
+    display: flex;
+}
+.channels-grid .channel .channel-icon {
+    width: 30px;
+    margin-bottom: 0;
+}
+.channels-grid .channel .channel-icon .bg-placeholder p {
+    font-size: 20px;
+}
+.channels-grid .channel .channel-icon .active {
+    display: none !important;
+}
+.channels-grid .channel .channel-name {
+    font-size: 14px;
+    margin-left: 10px;
+    text-align: left;
+    padding-right: 10px;
+}
+}
+.settings {
+  min-height: 100vh;
+  color: #000;
+}
+.settings .q-field--auto-height.q-field--dense.q-field--labeled .q-field__control-container {
+  padding-top: 0px;
+}
+.settings .back-button {
+  margin-left: 6px;
+}
+.settings .setting-title {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 0 0 20px 6px;
+}
+.settings .setting-title:first-child {
+  padding-top: 20px;
+}
+.settings .dark-mode-toggle-btn {
+  margin: 0 0 0 6px;
+}
+.settings .setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 10px;
+  margin: 0 0 20px 0;
+  max-width: 320px;
+}
+.settings .setting-item .setting-label {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+@media (max-width: 700px) {
+.settings {
+    padding-top: 0;
+}
+.settings .setting-item {
+    max-width: 100%;
+}
+}
+.settings-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+}
+.settings-loader img {
+  width: 50px;
+}
+
+/*# sourceMappingURL=382.fe557cb2.css.map*/
